@@ -38,14 +38,14 @@ The portfolio project simulates the full SDLC process, including:
 ## 📁 Folder Structure
 
 ```
-yet to update
+
 ```
 
 ---
 
 ## 🔗 Live Demo
 
-> [To be updated soon]
+> [sdlc-portfolio-project](https://runarok.github.io/sdlc-portfolio-project/)
 
 ---
 
