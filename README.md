@@ -25,6 +25,7 @@ The project follows all SDLC phases to demonstrate practical application of soft
 <pre>
 runarok-sdlc-portfolio-project/
 ├── 0-Planning/
+│   ├── system-architecture.md      # Defines primary/secondary actors and UML diagrams for portfolio SDLC flow
 │   └── project-overview.md         # Initial project scope, background, goals, and SDLC simulation intent
 ├── 1-Requirements/
 │   └── requirements.md             # Functional, non-functional requirements, acceptance criteria
@@ -57,6 +58,7 @@ Here you go — the exact content without the header structure (no `###` or `###
 
 0. [Planning/](./0-Planning)
    - [project-overview.md](./0-Planning/project-overview.md): Describes project objectives, SDLC simulation scope, and academic context.
+   - [system-architecture.md](./0-Planning/system-architecture.md): Defines project actors, overall system workflow, and UML diagrams illustrating SDLC and deployment flow.
 
 1. [Requirements/](./1-Requirements)
    - [requirements.md](./1-Requirements/requirements.md): Documents all functional and non-functional requirements, API integration needs, priorities, and acceptance criteria.
