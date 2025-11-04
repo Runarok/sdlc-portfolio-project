@@ -189,8 +189,6 @@ The **Dynamic GitHub Portfolio Website** demonstrates a structured implementatio
 By automating repository management and displaying real-time updates, the system reduces maintenance while maintaining professional presentation.
 
 **Future Enhancements:**
+- Implement a single JSON configuration file along with a unified JSON parser to handle all linkages, making it easier to manage and edit everything from one central location.
 
-* Add dark/light mode toggle.
-* Implement project filtering by tags (e.g., Web, ML, Automation).
-* Integrate visit analytics.
-* Optional integration with GitHub GraphQL API for advanced data insights.
+---
