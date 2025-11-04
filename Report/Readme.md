@@ -1,185 +1,196 @@
-# Software Engineering (SDLC) Project Report
+# **SOFTWARE ENGINEERING REPORT**
 
-*This report documents the complete software development lifecycle (SDLC) process undertaken for the personal portfolio website repository [Runarok/sdlc-portfolio-project](https://github.com/Runarok/sdlc-portfolio-project).*
+## **Project Title:**
 
----
-
-## 1. Problem Statement
-
-The project seeks to address the challenge faced by students and early-career professionals in showcasing their skills, achievements, and projects through a credible personal portfolio website. Despite the availability of generic website builders, many lack customization, fail to integrate interactive elements, and fall short in demonstrating hands-on software engineering skills. Career portals and social platforms (like LinkedIn, Behance) do not provide fine-grained control or the ability to simulate or document SDLC practices. 
-
-**Context:**  
-- Primary users: Students, recent graduates, freelance professionals  
-- Limitations of existing solutions: Limited customization, no proper skill demonstration, lack of version control integration, inadequate for technical showcasing  
-- Gap addressed by this project:  
-    - A portfolio site built from scratch using modern web technologies  
-    - Implements best practices of SDLC  
-    - Allows advanced customization and interactivity  
-    - Serves as a live demonstration of personal development capabilities
+**Dynamic GitHub Portfolio Website**
 
 ---
 
-## 2. Objectives
+## **1. Problem Statement**
 
-1. **Develop a fully functional portfolio website** that presents the user's skills, educational background, and project history.
-2. **Integrate interactive modules** (e.g., project galleries, contact forms) to enhance user engagement.
-3. **Ensure responsive design** for optimal usability across devices (desktop, tablet, mobile).
-4. **Automate deployment** and update processes using modern web development tooling.
-5. **Enhance user experience** by implementing intuitive navigation and visually appealing layouts.
-6. **Maintain code quality and documentation** adhering to professional software engineering standards.
+In modern development, maintaining a personal portfolio manually becomes inefficient as projects grow. Static websites require frequent edits whenever new repositories are added or updated, which leads to redundancy and inconsistency.
 
----
+This project solves that issue by **creating a dynamic portfolio website that fetches real-time repository data directly from GitHub’s REST API**. The website displays repositories, their descriptions, and relevant links automatically, making portfolio management seamless and self-updating.
 
-## 3. Requirements
-
-### 3.1 Functional Requirements
-
-- Website must display personal details (bio, education, skills).
-- Sections for project portfolios, achievements, and contact information.
-- Interactive elements: project filtering, contact form with validation, downloadable resume.
-- Responsive design for different screen sizes.
-- Integration with social profiles and external links.
-- Administrative module (optional) for easy site updates (add/edit projects, change profile details).
-- Search or filter functionality for projects/skills.
-
-### 3.2 Non-functional Requirements
-
-- Fast page load (<2s on broadband connection).
-- Robust security for user data and contact form (basic spam protection, no sensitive data stored).
-- Scalability for future components (blog, testimonials).
-- Accessibility standards compliance (WCAG 2.1).
-- Cross-browser compatibility (Chrome, Firefox, Safari, Edge).
-- Maintainable and well-documented codebase.
-
-### 3.3 Hardware, Software, APIs, Libraries, Data Sources
-
-- **Hardware:** Standard client devices (user-facing) and development hardware (PC/laptop).
-- **Software:**  
-    - OS: Windows/macOS/Linux (for development and deployment)  
-    - Web server: Nginx/Apache or static hosting (GitHub Pages/Netlify)
-- **Programming Languages:** CSS, JavaScript, HTML
-- **APIs/Libraries:**  
-    - [Bootstrap](https://getbootstrap.com) or custom CSS frameworks (UI layout, responsiveness)  
-    - [Font Awesome](https://fontawesome.com) (icon assets)
-- **Data Sources:**  
-    - Static JSON or local data files for portfolio entries, skills, achievements
-    - Email API (e.g., EmailJS, Formspree) for contact form submissions (optional)
+![Portfolio Landing Page Placeholder](assets/portfolio-homepage.png)
 
 ---
 
-## 4. Languages Used
+## **2. Objectives**
 
-- **HTML:**  
-    - Chosen for semantic structure and universal web compatibility.
-- **CSS:**  
-    - Used for custom styling and responsive layouts. Enables consistent visual design and separation of concerns.
-- **JavaScript:**  
-    - Provides interactivity, DOM manipulation, and dynamic feature integration (e.g., project filters, form validation).  
-- **Framework/Tooling (optional):**
-    - Bootstrap: For rapid UI prototyping and grid-based layouts.
-    - Font Awesome: For scalable vector icons.
+The key goals of the project are:
 
-*Justification:*  
-The stack prioritizes simplicity, universal browser support, and a clear demonstration of core web development skills suitable for a portfolio context and SDLC simulation.
+1. To design a **dynamic and responsive portfolio website** using HTML, CSS, and JavaScript.
+2. To integrate the **GitHub REST API** for fetching live repository data.
+3. To **automate repository listing** — including project names, descriptions, and live demo links.
+4. To implement a clean, minimal UI with consistent structure and fast loading time.
+5. To apply SDLC methodology systematically — from planning to deployment.
+
+![Project Mockup Placeholder](assets/project-mockup.png)
 
 ---
 
-## 5. Phases of SDLC
+## **3. Requirements**
 
-### 5.1 Planning
+### **Software Requirements**
 
-- **Idea Formulation:** Develop a portfolio site that demonstrates both technical ability and SDLC methodology.
-- **Feasibility Study:** Analyze existing solutions, define target users (students, professionals), assess available resources (free hosting, readily available web frameworks).
-- **Target Users:** Individuals seeking to showcase their projects and skills online.
-- **Feature Set:** Personal info, project highlights, skills, contact form, downloadable resume, interactive galleries.
-- **Task Allocation:** Assign tasks (UI design, backend logic [if applicable], documentation, testing, deployment).
-- **Risk Assessment:**  
-    - Scope creep due to feature additions  
-    - Compatibility issues (browser/device differences)  
-    - Security vulnerabilities (contact form spam)
+* **Operating System:** Windows 10 / macOS / Linux
+* **IDE / Editor:** Visual Studio Code
+* **Browser:** Google Chrome / Edge / Firefox
+* **Design Tool:** Figma
+* **Version Control:** Git & GitHub
+* **API:** GitHub REST API v3
+* **Deployment:** GitHub Pages
 
-*Planning assets:*  
-- [Project Plan Example (add your plan at ./assets/planning.pdf)](./assets/planning.pdf)
-- [Persona Profile (add at ./assets/persona-profile.png)](./assets/persona-profile.png)
+### **Hardware Requirements**
 
----
+* **Processor:** Intel i3 or above
+* **RAM:** Minimum 4 GB
+* **Storage:** 500 MB free space
+* **Internet:** Required for API access and deployment
 
-### 5.2 Requirements
+### **Libraries / Tools Used**
 
-- **Requirements Analysis:** Collect user stories (e.g., “as a student, I want to showcase my work”).
-- **Data Collection:** Gather sample portfolio entries, images, certifications.
-- **Use-Case Identification:** Define main use cases: browsing portfolio, submitting contact form, downloading resume.
-- **System Goals:** High engagement, ease of content updates, effective skill presentation.
-
-*Requirements assets:*  
-- [Use Case Diagram (add at ./assets/usecase-diagram.png)](./assets/usecase-diagram.png)
-- [Requirements Specification (add at ./assets/requirements-spec.md)](./assets/requirements-spec.md)
+* HTML5, CSS3, JavaScript (ES6)
+* Axios or Fetch API
+* Git & GitHub
+* Figma
 
 ---
 
-### 5.3 Architecture
+## **4. Languages Used**
 
-- **SDLC Model Chosen:** Agile Model
-    - *Justification:* Agile fits well for iterative improvement, user feedback incorporation, and flexible requirements in a personal project context. Enables frequent testing and quick adaptation to new ideas.
-    - *Iteration:* Small, incremental builds (e.g., releasing MVP, then adding new features).
-    - *Testing Approach:* Continuous integration, regular manual testing after each iteration.
-    - *Scalability:* Modular development allows future expansion (blog, testimonials, admin module).
-
-*Architecture assets:*  
-- [SDLC Model Rationale (add at ./assets/sdlc-model-justification.pdf)](./assets/sdlc-model-justification.pdf)
+| Language / Framework | Purpose                            |
+| -------------------- | ---------------------------------- |
+| **HTML5**            | Page structure                     |
+| **CSS3**             | Styling, responsiveness            |
+| **JavaScript (ES6)** | API handling and dynamic rendering |
+| **JSON**             | Data format for API response       |
 
 ---
 
-### 5.4 Design
+## **5. Phases of SDLC**
 
-- **Conceptual Design:** Layout mockups, component breakdowns, and UI/UX flow.
-- **Technical Design:** Folder structure, data flow, integration points (APIs/external libraries).
-- **Diagrams:**  
-    - Wireframes for homepage, portfolio gallery, contact page  
-    - ER Diagram (if data handled beyond static files)
-    - Flowchart/DFD illustrating how data/processes flow between components
+### **Phase 1 – Planning**
 
-*Design assets:*  
-- [Homepage Wireframe (add at ./assets/homepage-wireframe.png)](./assets/homepage-wireframe.png)
-- [Portfolio ER Diagram (add at ./assets/portfolio-er-diagram.png)](./assets/portfolio-er-diagram.png)
-- [Process Flowchart (add at ./assets/process-flowchart.png)](./assets/process-flowchart.png)
+The planning phase focused on aligning the project idea with clear, functional outcomes.
+**Core Planning Tasks:**
 
-**Explanation:**  
-- Data flow: portfolio entries read from local JSON/static files, filtered by JS and rendered dynamically.
-- Component interaction: navigation controls update main content area, form submissions sent to configured API.
+* Identify the need for a self-updating portfolio.
+* Define user group — recruiters, collaborators, and visitors.
+* Plan API integration to fetch repositories dynamically.
+* Choose technologies (HTML, CSS, JS, GitHub REST API).
+* Design a simple, responsive card-based interface.
+* Establish version control through Git and GitHub.
+
+![Planning Phase Placeholder](assets/planning-phase.png)
 
 ---
 
-### 5.5 Development & Deployment
+### **Phase 2 – Requirements**
 
-- **Implementation:**  
-    - Developed using modular HTML/CSS/JS files.  
-    - Created core modules: Home, Portfolio, About, Contact.  
-    - Integrated UI framework (Bootstrap or custom grid).  
-    - Added interactivity with JS (e.g., filtering, popup display, form validation).
-- **Testing Performed:**  
-    - Manual browser and device testing  
-    - Automated validation (e.g., HTML/CSS validators)
-    - User acceptance testing (feedback from peers/instructors)
-- **Debugging:**  
-    - Browser dev tools, JS error tracking, responsive checks
-- **Integration:**  
-    - Combined individual UI components, ensured consistent styling and navigation.
-- **Deployment:**  
-    - **Environment:** Deployed on [GitHub Pages](https://pages.github.com/) for ease, or Netlify as alternative (local for development; cloud as production).
-    - Steps: code push to repository, trigger build/deploy pipeline, verify public access.
+#### **Functional Requirements**
 
-*Deployment assets:*  
-- [Deployment Guide (add at ./assets/deployment-guide.pdf)](./assets/deployment-guide.pdf)
-- [Testing Checklist (add at ./assets/testing-checklist.md)](./assets/testing-checklist.md)
-- [Live Site Screenshot (add at ./assets/screenshot-live.png)](./assets/screenshot-live.png)
+* Fetch repository data using GitHub REST API.
+* Display data as project cards with titles and descriptions.
+* Include buttons for "View Code" and "View Page" if available.
+* Update dynamically when repositories are added.
+
+#### **Non-Functional Requirements**
+
+* Load time under 3 seconds.
+* Responsive and accessible UI.
+* Maintainable and modular codebase.
+* Cross-browser compatibility.
+
+![Requirements Placeholder](assets/requirements.png)
 
 ---
 
-## [Appendices]
+### **Phase 3 – Architecture**
 
-- Links to additional references, test logs, and future work plans.
+The project follows the **Waterfall SDLC model**, ideal for solo projects with well-defined goals.
+Each stage — from planning to maintenance — is completed before moving to the next, ensuring structural clarity.
+
+**System Overview:**
+
+* **Frontend:** HTML, CSS, JavaScript
+* **API Layer:** GitHub REST API
+* **Data Flow:**
+  User → Portfolio Website → GitHub API → JSON Data → DOM Rendering
+* **Deployment:** GitHub Pages
+
+**Why Waterfall Model?**
+Because requirements were static and no frequent iteration was needed.
+
+![SDLC Waterfall Diagram Placeholder](assets/sdlc-waterfall.png)
 
 ---
 
-*Prepared by: Runarok (GitHub: [Runarok/sdlc-portfolio-project](https://github.com/Runarok/sdlc-portfolio-project))*
+### **Phase 4 – Design**
+
+Designing began with Figma wireframes that mapped out the layout and component structure.
+
+**Design Highlights:**
+
+* Minimal and clean theme with high contrast and modern typography.
+* Responsive grid-based layout for repositories.
+* Smooth scrolling and section transitions.
+* Consistent color palette and visual hierarchy.
+
+**Artifacts:**
+
+* **Wireframes:** Home, About, Projects section
+* **Typography:** Poppins / Roboto
+* **Color Scheme:** Light theme with dark text and blue highlights
+* **Icons:** SVG for scalability
+
+![Final UI Placeholder](assets/final-ui.png)
+![Navigation Placeholder](assets/navigation.png)
+
+---
+
+### **Phase 5 – Development & Deployment**
+
+#### **Development Process**
+
+* HTML structure created first.
+* CSS applied for styling and responsiveness.
+* JavaScript implemented for data fetching and rendering.
+* Used **Fetch API** to pull JSON data from GitHub (`https://api.github.com/users/{username}/repos`).
+* Conditional rendering used for “View Page” button — only visible if GitHub Pages exists for a repo.
+* Each repository represented as a responsive card.
+
+**Testing Included:**
+
+* Functionality check of API response.
+* Browser testing (Chrome, Firefox, Edge).
+* Responsive design validation.
+* Error handling for failed API calls.
+
+![Code Snippet Placeholder](assets/code-snippet.png)
+![Testing Placeholder](assets/testing.png)
+
+#### **Deployment**
+
+* Deployed through **GitHub Pages** from the main branch.
+* Repository auto-updates ensure the live site stays current.
+* Continuous deployment achieved via GitHub integration.
+* Accessible via: `https://<your-username>.github.io/`
+
+![GitHub Pages Settings Placeholder](assets/github-pages.png)
+![Live Website Screenshot Placeholder](assets/live-website.png)
+
+---
+
+## **6. Conclusion**
+
+The **Dynamic GitHub Portfolio Website** demonstrates a structured implementation of SDLC principles to create a scalable, self-updating personal portfolio.
+By automating repository management and displaying real-time updates, the system reduces maintenance while maintaining professional presentation.
+
+**Future Enhancements:**
+
+* Add dark/light mode toggle.
+* Implement project filtering by tags (e.g., Web, ML, Automation).
+* Integrate visit analytics.
+* Optional integration with GitHub GraphQL API for advanced data insights.
